@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="zxx">
 <head>
 <meta charset="utf-8">
@@ -41,22 +41,23 @@
   <li><a href="about.html">About</a></li>
   <li><a href="track.html">tracks</a></li>
   <li><a href="blog.html">News</a></li>
-  <li><a href="https://g.co/kgs/3YVNNG">Music Profile</a></li>
+  <li><a href="https://g.co/kgs/LZzL3z">Music Profile</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 </div>
 </div>
-
+<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 <div class="social_icon text-right">
 <ul>
 <li><a href="https://www.facebook.com/girikamanofficial"> <i class="fa fa-facebook"></i> </a></li>
-<li><a href="https://twitter.com/Girikaman"> <i class="fa fa-twitter"></i> </a></li>
-<li><a href="https://www.instagram.com/girikaman"> <i class="fa fa-instagram"></i> </a></li>
+<li><a href="https://twitter.com/girikaman?s=21"> <i class="fa fa-twitter"></i> </a></li>
+<li><a href="https://instagram.com/girikaman?igshid=1j4sjdzo4ff37"> <i class="fa fa-instagram"></i> </a></li>
 </ul>
 </div>
 </div>
-
+<div class="col-12">
+<div class="mobile_menu d-block d-lg-none"></div>
 </div>
 </div>
 </div>
@@ -82,7 +83,31 @@
 <section class="contact-section section_padding">
 <div class="container">
 <div class="d-none d-sm-block mb-5 pb-4">
-
+<div id="map" style="height: 480px;"></div>
+<script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var grayStyles = [
+              {
+                featureType: "all",
+                stylers: [
+                  { saturation: -90 },
+                  { lightness: 50 }
+                ]
+              },
+              {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -31.197, lng: 150.744},
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel:  false
+            });
+          }
+          
+        </script>
+<script src="#"></script>
+</div>
 <div class="row">
 <div class="col-12">
 <h2 class="contact-title">Get in Touch</h2>
@@ -185,11 +210,11 @@ Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/clou
 <div class="col-xl-5 col-md-6">
 <div class="footer_links">
 <ul>
-<li><a href="index.html">home</a></li>
-<li><a href="about.html">about</a></li>
-<li><a href="track.html">tracks</a></li>
-<li><a href="blog.html">News</a></li>
-<li><a href="contact.html">contact</a></li>
+<li><a href="#">home</a></li>
+<li><a href="#">about</a></li>
+<li><a href="#">tracks</a></li>
+<li><a href="blog.html">news</a></li>
+<li><a href="#">contact</a></li>
 </ul>
 </div>
 </div>
